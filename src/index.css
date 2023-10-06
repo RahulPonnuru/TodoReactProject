@@ -68,7 +68,7 @@ button{
   position: relative;
   left: 80%;
   padding: 4px;
-  top: 30%;
+  top: 31%;
   background-color: gold;
   border-style: none;
   color: white;
@@ -116,11 +116,18 @@ Modal */
   background-image: url("https://transparenttextures.com/patterns/climpek.png");
   position: fixed;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   left: 0;
   right: 0;
   top: 0;
+  z-index: 1;
+}
+
+.alertDiv{
+  margin: 20px;
+  border-radius: 10px;
 }
 
 .modal {
@@ -162,4 +169,48 @@ Modal */
   margin: auto auto;
   font-size: 20px;
   font-family: 'Indie Flower', cursive;
+}
+
+.changeView{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 15px;
+}
+
+.changeView button{
+  padding: 10px;
+  border-style: none;
+  /* border-bottom: 4px solid gold; */
+  background-color: white;
+  box-shadow: 0px 0px 3px gray;
+  border-radius: 3px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.selectType{
+  text-align: center;
+  margin: 50px;
+}
+
+.dropdown{
+  padding: 5px;
+  border-radius: 10px;
+  border: transparent;
+}
+
+select:hover{
+  box-shadow: 0px 0px 3px gold;
+}
+
+.cardTypeName{
+  font-size: 12px;
+  color: gold;
+  display: inline;
+  padding: 4px;
+}
+
+.noteBtns{
+  position: relative;
+  bottom: 20px;
+  padding-left: 2px;
 }
